@@ -185,7 +185,7 @@ public final class RocksGame implements Arena {
 
         private void startDemo() {
             demo = new Game(seeds.getAsLong());
-            pilot = new Pilot();
+            pilot = new Pilot(demo.seed());
             over = 0;
         }
 

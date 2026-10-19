@@ -3,9 +3,9 @@ package eu.amadeos.games.rocks.domain;
 /** The three sizes of rocks: a hit breaks a rock into two of the next smaller size, the smallest into dust. */
 // --8<-- [start:sizes]
 public enum RockSize {
-    LARGE(30, 20, 25, 50),
-    MEDIUM(16, 50, 40, 80),
-    SMALL(8, 100, 60, 115);
+    LARGE(30, 20, 30, 60),
+    MEDIUM(16, 50, 50, 95),
+    SMALL(8, 100, 70, 130);
 
     private final double radius;
     private final int points;

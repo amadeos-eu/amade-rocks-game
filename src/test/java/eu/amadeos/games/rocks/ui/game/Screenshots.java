@@ -5,9 +5,11 @@ import eu.amadeos.gameengine.audio.Mixer;
 import eu.amadeos.gameengine.input.Keyboard;
 import eu.amadeos.gameengine.input.Mouse;
 import eu.amadeos.games.rocks.bootstrap.RocksModule;
+import eu.amadeos.games.rocks.domain.Event;
 import eu.amadeos.games.rocks.domain.Field;
 import eu.amadeos.games.rocks.domain.Game;
 import eu.amadeos.games.rocks.domain.Rock;
+import eu.amadeos.games.rocks.domain.RockSize;
 import eu.amadeos.games.rocks.repository.RocksSettings;
 
 import javax.imageio.ImageIO;
@@ -50,9 +52,12 @@ public final class Screenshots {
         for (int i = 0; i < 600 * 120; i++) {
             shots.steps(1);
             Game demo = title.demo();
-            if (demo.ship() != null && demo.bullets().size() >= 2 && demo.rocks().size() >= 6
-                    && shots.game.effects().particles().count() > 20 && overEdge(demo)) break;
+            boolean broken = demo.events().stream().anyMatch(e -> e instanceof Event.RockBroken b
+                    && b.size() != RockSize.SMALL);
+            if (broken && demo.ship() != null && demo.bullets().size() >= 1 && demo.rocks().size() >= 6
+                    && overEdge(demo)) break;
         }
+        shots.steps(8);     // the dust a moment later
         shots.save(new File(dir, "play.png"), false);
         shots.tap(KeyEvent.VK_ENTER);
         shots.save(new File(dir, "wave.png"), true);

@@ -236,7 +236,7 @@ class GameTest {
         int[] scores = new int[2];
         for (int round = 0; round < 2; round++) {
             Game game = new Game(2026);
-            Pilot pilot = new Pilot();
+            Pilot pilot = new Pilot(game.seed());
             for (int i = 0; i < 60 * 120 && game.phase() != Game.Phase.OVER; i++) {
                 game.update(STEP, pilot.steer(game, STEP));
             }

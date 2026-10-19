@@ -176,7 +176,7 @@ public final class Game {
 
     private Rock newRock(RockSize size, Vector position, double angle) {
         double speed = size.minSpeed() + random.nextDouble() * (size.maxSpeed() - size.minSpeed());
-        speed *= 1 + Math.min(wave - 1, 6) * 0.05;     // a little faster each wave
+        speed *= 1 + Math.min(wave - 1, 8) * 0.08;     // a little faster each wave
         double spin = (random.nextDouble() - 0.5) * 2;
         return new Rock(size, random.nextInt(ROCK_SHAPES), position, Vector.ofAngle(angle, speed),
                 random.nextDouble() * 2 * Math.PI, spin);
