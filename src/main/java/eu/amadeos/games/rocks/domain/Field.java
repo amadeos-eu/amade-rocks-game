@@ -21,7 +21,10 @@ public final class Field {
     /** Acceleration while the engine fires, units per second². */
     public static final double THRUST = 260;
     public static final double MAX_SPEED = 260;
-    /** The share of its speed the ship loses per second without thrust. Space has no friction, games do. */
+    /**
+     * Drag: each step takes this times the step's seconds of the ship's speed away, a little more than a
+     * third per second. Space has no friction, games do.
+     */
     public static final double DRAG = 0.45;
     // --8<-- [end:ship]
 
