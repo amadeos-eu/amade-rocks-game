@@ -1,0 +1,24 @@
+[Desktop Entry]
+Type=Application
+Version=1.0
+Name=amadeOS Rocks
+Name[de]=amadeOS Rocks
+Name[fr]=amadeOS Rocks
+Name[es]=amadeOS Rocks
+Name[it]=amadeOS Rocks
+GenericName=Space Shooting Game
+GenericName[de]=Weltraum-Schießspiel
+GenericName[fr]=Jeu de tir spatial
+GenericName[es]=Juego de disparos espacial
+GenericName[it]=Gioco di tiro spaziale
+Comment=Shoot the rocks in space before they hit your ship
+Comment[de]=Schießen Sie die Felsbrocken im All ab, bevor sie Ihr Schiff treffen
+Comment[fr]=Détruisez les rochers de l'espace avant qu'ils ne touchent votre vaisseau
+Comment[es]=Destruya las rocas del espacio antes de que choquen con su nave
+Comment[it]=Distruggi gli asteroidi prima che colpiscano la tua nave
+Icon=amade-rocks-game
+Exec=/usr/bin/amade-rocks-game
+Terminal=false
+Categories=Game;ArcadeGame;
+Keywords=asteroids;rocks;space;ship;shooter;arcade;game;
+StartupNotify=true
