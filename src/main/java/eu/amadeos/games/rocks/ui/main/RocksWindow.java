@@ -74,12 +74,11 @@ public final class RocksWindow extends JFrame implements RocksView {
             canvas.requestFocusInWindow();
         });
         setJMenuBar(menuBar());
+        // Another program took the focus: pause. Not while switching to or from full screen, though.
+        fullScreen.whenDeactivated(() -> {
+            if (presenter != null) presenter.focusLost();
+        });
         addWindowListener(new WindowAdapter() {
-            @Override
-            public void windowDeactivated(WindowEvent e) {
-                if (presenter != null) presenter.focusLost();
-            }
-
             @Override
             public void windowActivated(WindowEvent e) {
                 canvas.requestFocusInWindow();
