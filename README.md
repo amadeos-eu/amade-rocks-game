@@ -1,6 +1,6 @@
 # amade-rocks-game
 
-**amade-rocks-game** is the classic rocks in space on the [amadeOS](https://github.com/datazuul/amadeos) desktop: turn, thrust and shoot your little ship through waves of drifting rocks that break into smaller ones. Built on [amade-game-engine](https://github.com/datazuul/amade-game-engine); runs on other operating systems as well.
+**amade-rocks-game** is the classic rocks in space on the [amadeOS](https://github.com/amadeos-eu/amadeos) desktop: turn, thrust and shoot your little ship through waves of drifting rocks that break into smaller ones. Built on [amade-game-engine](https://github.com/amadeos-eu/amade-game-engine); runs on other operating systems as well.
 
 ![License](https://img.shields.io/badge/license-EUPL--1.2-blue)
 ![Java](https://img.shields.io/badge/Java-25-orange)
