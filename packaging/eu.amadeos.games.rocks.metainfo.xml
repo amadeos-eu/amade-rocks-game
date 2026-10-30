@@ -51,8 +51,8 @@
     <category>ArcadeGame</category>
   </categories>
 
-  <url type="homepage">https://github.com/datazuul/amade-rocks-game</url>
-  <url type="bugtracker">https://github.com/datazuul/amade-rocks-game/issues</url>
+  <url type="homepage">https://github.com/amadeos-eu/amade-rocks-game</url>
+  <url type="bugtracker">https://github.com/amadeos-eu/amade-rocks-game/issues</url>
   <developer id="eu.amadeos">
     <name>amadeOS Project</name>
   </developer>
@@ -64,7 +64,7 @@
       <caption xml:lang="fr">La première vague</caption>
       <caption xml:lang="es">La primera oleada</caption>
       <caption xml:lang="it">La prima ondata</caption>
-      <image>https://raw.githubusercontent.com/datazuul/amade-rocks-game/main/docs/screenshots/amade-rocks-game.png</image>
+      <image>https://raw.githubusercontent.com/amadeos-eu/amade-rocks-game/main/docs/screenshots/amade-rocks-game.png</image>
     </screenshot>
   </screenshots>
 
