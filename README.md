@@ -62,7 +62,7 @@ With `../amade-game-engine` (and `../amade-commons`) checked out next to this re
 
 From the engine: `GameLoop` and `Ticker`, `Vector`, `Angles`, `Wrap`, `Outline`, `Pool`, `Circle`, `SeededRandom`, `GameCanvas`, `Sprite`, `Particles`, `Sound` and `Mixer`, `Keyboard`, `Mouse` and `Controls`, `SceneStack`, `FullScreen`, high scores.
 
-Comments of the form `// --8<-- [start:name]` mark the excerpts the [Game Developer's Handbook](https://datazuul.github.io/amade-game-engine/) quotes; chapter 23 is about this game.
+Comments of the form `// --8<-- [start:name]` mark the excerpts the [Game Developer's Handbook](https://docs.amadeos.eu/amade-game-engine/) quotes; chapter 23 is about this game.
 
 ## Licence
 
